@@ -1,0 +1,16 @@
+<h1>BookCode Data</h1>
+
+<p *ngIf="!empList"><em>Loading...</em></p>
+
+        <div *ngFor="let emp of empList">
+            {{ emp.id}}
+            {{ emp.parent}}
+           {{ emp.text }}
+        </div>		
+
+   <div ng-controller="homeCtrl">
+      {{treeModel}}
+	  
+   </div>
+	
+
